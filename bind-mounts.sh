@@ -1,0 +1,2 @@
+# bind mount data / sharing dara dengan host dan container
+docker container create --name mongo-data --publish 27018:27017 --mount "type=bind,source=/Users/user/Documents/Developments/LatihanGolang/Docker/mongo-data,destination=/data/db" --env MONGO_INITDB_ROOT_USERNAME=root --env MONGO_INITDB_ROOT_PASSWORD=root mongo:latest
